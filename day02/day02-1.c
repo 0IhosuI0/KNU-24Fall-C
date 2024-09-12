@@ -4,18 +4,20 @@ int main(){
     int func;
     double num1, num2, result;
 
-    printf("사칙연산 프로그램 \n");
+    printf("사칙연산 프로그램 \n\n");
     printf("원하는 기능을 입력하시오. \n");
     printf("1. 더하기, 2. 뺴기, 3. 곱하기, 4. 나누기 \n");
 
     printf("기능 : ");
     scanf("%d",&func);
 
+    printf("\n");
     printf("숫자 1을 입력하세요 : ");
     scanf("%lf", &num1);
 
     printf("숫자 2룰 입력하세요 : ");
     scanf("%lf", &num2);
+    printf("\n");
 
     if(func == 1){
         result = num1 + num2;
