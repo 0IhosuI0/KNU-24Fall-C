@@ -3,6 +3,7 @@
 int main(){
     int func;
     double num1, num2, result;
+    char op;
 
     printf("사칙연산 프로그램 \n\n");
     printf("원하는 기능을 입력하시오. \n");
@@ -21,25 +22,30 @@ int main(){
 
     if(func == 1){
         result = num1 + num2;
-        printf("%lf + %lf = %lf \n", num1, num2, result);
+        //printf("%lf + %lf = %lf \n", num1, num2, result);
+        op = '+';
     }
     else if(func == 2){
         result = num1 - num2;
-        printf("%lf - %lf = %lf \n", num1, num2, result);
+        //printf("%lf - %lf = %lf \n", num1, num2, result);
+        op = '-';
     }
     else if(func == 3){
         result = num1 * num2;
-        printf("%lf * %lf = %lf \n", num1, num2, result);
+        //printf("%lf * %lf = %lf \n", num1, num2, result);
+        op = '*';
     }
     else if(func == 4){
         result = num1 / num2;
-        printf("%lf / %lf = %lf \n", num1, num2, result);
+        //printf("%lf / %lf = %lf \n", num1, num2, result);
+        op ='/';
     }
     else{
         printf("잘못된 값입니다. 프로그램을 다시 실행해주십시오. \n");
         return 0;
     }
-
+    
+    printf("%lf %c %lf = %lf \n", num1, op, num2, result);
     return 0;
     
 }
