@@ -16,11 +16,8 @@ int main(){
 int Fac(int num_r){
     int fac_num;
     
-    if(num_r == 1){
+    if(num_r == 1 || num_r ==0){
         return 1;
-    }
-    else if(num_r == 0){
-        fac_num = 1;
     }
     else{
         fac_num = num_r*Fac(num_r - 1);
