@@ -14,17 +14,17 @@ int main(){
 }
 
 int Fac(int num_r){
-    int pac_num;
+    int fac_num;
     
     if(num_r == 1){
         return 1;
     }
     else if(num_r == 0){
-        pac_num = 1;
+        fac_num = 1;
     }
     else{
-        pac_num = num_r*Fac(num_r - 1);
+        fac_num = num_r*Fac(num_r - 1);
     }
 
-    return pac_num;
+    return fac_num;
 }
