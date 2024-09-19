@@ -9,8 +9,9 @@ int main(){
             cnt++;
         }
 
-        if (cnt % 6 == 0){
+        if (cnt == 6){
             printf("\n");
+            cnt = 0;
         }
         
         
