@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sosu(int recieve);
+int sosu(int receive);
 
 int main(){
     int transmit, result;
@@ -19,11 +19,11 @@ int main(){
     return 0;
 }
 
-int sosu(int recieve){
+int sosu(int receive){
     int cnt;
     
-    for(cnt = 2; cnt < recieve; cnt++){
-        if(recieve % cnt == 0){
+    for(cnt = 2; cnt < receive; cnt++){
+        if(receive % cnt == 0){
             return 0;
         }
     }
