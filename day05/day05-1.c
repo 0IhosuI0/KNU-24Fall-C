@@ -5,7 +5,7 @@ int main(){
     int N;
     int* stud_num;
     int* score;
-    int sum = 0, avr = 0;
+    int sum = 0, avr = 0, max = 0, min = 2147483647;
     char** stud_name;
 
 
@@ -22,7 +22,7 @@ int main(){
 
     for(int i = 0;i < N; i++){
         printf("이름 : ");
-        scanf("%s", &stud_name[i], 100);
+        scanf("%s", stud_name[i], 100);
 
         printf("학번 : ");
         scanf("%d", &stud_num[i]);
@@ -33,10 +33,13 @@ int main(){
 
     for(int i = 0; i < N; i++){
         sum = score[i] + sum;
-        printf("%d",score[i]);
+        if(max < score[i]) max = score[i];
+        if(min > score[i]) min = score[i];
     }
     avr = sum / N;
     printf("평균 : %d \n", avr);
+    printf("최대 : %d \n", max);
+    printf("최소 : %d \n", min);
     
     free(score);
     free(stud_num);
