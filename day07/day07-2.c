@@ -38,5 +38,6 @@ int main(){
         printf("}\n");
     }
 
+    printf("\n원주율 : %lf\n", PI);
     return 0;
 }
