@@ -36,10 +36,20 @@ void Str_Err(char* str){
 }
 
 void revert_Str(char* rev_Str){
-    printf("뒤집어진 문자열 : ");
-    for(int i = strlen(rev_Str); i >= 0; i--){
-        printf("%c", rev_Str[i]);
+    char* start, * end;
+    char tmp;
+    start = rev_Str;
+    end = rev_Str + strlen(rev_Str) - 1;
+    
+    for(int i = 0; i < strlen(rev_Str)/2; i++){
+        tmp = *(start);
+        *(start) = *(end);
+        *(end) = tmp;
+        *(start)++;
+        *(end)--;
     }
+    
+    printf("뒤집어진 문자열 : %s", rev_Str, sizeof(rev_Str));
     printf("\n");
 
 }
