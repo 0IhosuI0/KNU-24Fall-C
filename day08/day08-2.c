@@ -59,6 +59,8 @@ void movePointer(void* array){
         }
         
     }
+    printf("\n");
     printf("더 이상 이동 할 수 없습니다. \n");
+    printf("\n");
     printf("종료 위치 : (%d, %d), 배열의 값 : %d\n", x, y, val);
 }
